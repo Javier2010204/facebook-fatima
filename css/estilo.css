@@ -1,0 +1,236 @@
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', Arial;
+}
+body{
+    margin: 0;
+}
+
+/* CLASES DE UTILIDAD */
+
+.margen-arriba{
+    margin-top: 1em;
+}
+
+.margen-derecha{
+    margin-right: 1em;
+}
+
+.margen-derecha-05{
+    margin-right: 0.5em;
+}
+
+.altura-100{
+    height: 100px;
+}
+
+.ancho-70{
+    width: 70%;
+}
+
+.redondeado-10{
+    border-radius: 10px;
+}
+
+.gris{
+    background-color: #D9D9D9;
+}
+
+.texto-gris{
+    color: #808080;
+}
+
+.red{
+    color: red;
+}
+
+.letra-negrita{
+    font-weight: bold;
+}
+
+.letra-liviana{
+    font-weight: lighter;
+}
+
+.letra-small{
+    font-size: 14px;
+}
+
+/*
+    1. ocupe el 100% del alto
+    2. centrar los elementos hijos
+    3. backgroun-color => gris
+*/
+.contenedor-principal{
+    height: 100vh;
+    background-color: #F1F3F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+/* ESTILOS DE NAVEGACION */
+#navegacion{
+    background-color: blue;
+}
+
+
+/* ESTILOS DEL FORMULARIO DE PUBLICACIONES */
+#nueva-publicacion{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #D9D9D9;
+}
+
+.info-usuario .imagen-usuario{
+    height:50px;
+    width:50px;
+    background-image: url('../imagenes/facebook-profile.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.info-usuario .info-contenido{
+    height:50px;
+}
+
+#privacidad-publicacion{
+    display: flex;
+    align-items: center;
+}
+
+
+/*
+    1. Poner los elementos del formulario en columna
+    2. input texto: quitar borde, hacerlo mas grande, placeholder mas grande
+    3. darle estilo al boton
+
+*/
+
+
+
+#formulario-publicacion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.input-publicacion{
+    border: 0px;
+    height: 100px;
+    padding: 10px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.input-publicacion::placeholder{
+    font-size: 1.5em;
+}
+
+.input-publicacion:focus{
+    outline: 0;
+    border-bottom: 2px solid #738DC3;
+}
+
+.boton-facebook{
+    width: 50%;
+    background-color: #3E64B0;
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+/* Estilo iconos de opciones en las publicaciones */
+#opciones-publicacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #D9D9D9;
+    font-size: 14px;
+}
+
+#opciones-publicacion #live-video-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#opciones-publicacion #live-video-icono i{
+    color: #EF5059;
+}
+
+#opciones-publicacion #fotos-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#opciones-publicacion #fotos-icono i{
+    color: #C0DB3F;
+}
+
+#opciones-publicacion #actividad-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#opciones-publicacion #actividad-icono i{
+    color: #F9CB03;
+}
+
+#opciones-publicacion #mas-opciones-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ESTILOS DE LAS PUBLICACIONES */
+#contenedor-publicaciones{
+    background-color: green;
+}
+
+.info-usuario{
+    display:flex;
+    padding: 10px;
+}
+
+
+.info-contenido p{
+    margin: 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px){
+
+    .ancho-70{
+        width: 100%;
+    }
+
+    .altura-100{
+        height: 100vh;
+    }
+
+    .active{
+        height:200px;
+    }
+
+    #opciones-publicacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (width: 700px){
+    .contenedor-principal{
+        
+    }
+}
+
+
